@@ -1,0 +1,13 @@
+images:
+  floor:
+    units:
+      - image: example.com/greeting%floor
+      - image: example.com/greeting%lib
+  bin:
+    units:
+      - floor: .%floor
+        build: |
+          mkdir -p /dest/bin
+          gcc -o /dest/bin/greetme greetme.c -lgreet
+      - image: example.com/greeting%lib
+      - image: barney.ci/alpine%pkg/alpine-base
