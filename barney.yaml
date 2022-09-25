@@ -11,3 +11,9 @@ images:
           gcc -o /dest/bin/greetme greetme.c -lgreet
       - image: example.com/greeting%lib
       - image: barney.ci/alpine%pkg/alpine-base
+  docker:
+    units:
+      - image: .%bin
+    metadata:
+      docker:
+        cmd: [/bin/greetme]
