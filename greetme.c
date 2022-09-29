@@ -4,6 +4,6 @@
 extern char *greeting();
 
 int main() {
-  printf("%s, world!  Yay!\n", greeting());
+  printf("%s, world!  Hi everyone!\n", greeting());
   return 0;
 }
