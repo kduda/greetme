@@ -1,9 +1,9 @@
 
 #include <stdio.h>
 
-extern char *greeting();
+extern char *greeting(  );
 
 int main() {
-  printf( "%s, world!\n", greeting() );
+  printf(  "%s, world!\n", greeting()  );
   return 0;
 }
